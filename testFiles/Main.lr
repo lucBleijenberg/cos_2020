@@ -1,0 +1,93 @@
+
+void a {} [
+   println["a()"]
+]
+
+void a {int a} [
+    println["a(int)"]
+    println[a]
+]
+
+void a {float a} [
+    println["a(float)"]
+    println[a]
+]
+
+a[]
+a[4]
+a[3.14]
+
+
+text b {int a} [
+    when
+        {a < 5}   [ <- "a < 5" ]
+        {a > 5}   [ <- "a > 5" ]
+        otherwise [ <- "a == 5" ]
+]
+
+println[""]
+
+int i = -100
+print["global i: "]
+println[i]
+
+for i = 4..6 [
+    print[i]
+    print["    "]
+    println[b[i]]
+]
+
+
+println[""]
+
+for i = 0..9 [
+    print["outer i: "]
+    println[i]
+    for i = 10..14 [
+        print["    inner i: "]
+        println[i]
+    ]
+]
+
+println[""]
+
+int getFive{} [ <- 2 + 3 ]
+
+print["five: "]
+println[getFive[]]
+
+println[""]
+
+
+int x = 3 + 5 * 3    @ 18
+
+int y = [3 + 5] * 3  # 24
+
+print["3 + 5 * 3 = "]
+println[x]
+
+print["[3 + 5] * 3 = "]
+println[y]
+
+
+println[""]
+
+
+0/1 d = on
+0/1 e = off
+0/1 f = d and e    @ off
+0/1 g = d or e     @ on
+
+when {[d || e] && [g || f]} [  $ (on || off) && (on || off)
+    println[":)"]
+]
+otherwise [
+    println[":("]
+]
+
+
+
+
+
+
+

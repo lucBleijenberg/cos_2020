@@ -1,0 +1,9 @@
+
+int a = 4
+
+void a{int a} [
+   <- a > 5
+]
+
+println[a[a]]     @ `off` (4 is not bigger than 5)
+

@@ -1,0 +1,20 @@
+
+int i = 12
+
+void a {int i} [
+    when
+        {i > 10} [
+            text i = "hello"
+            println[i]
+        ]
+        {i < 10} [
+            println[i]
+        ]
+        otherwise [
+            float i = 3.14
+            println[i]
+        ]
+]
+
+
+

@@ -1,0 +1,6 @@
+
+
+void a{} [
+    <- 5     @ cannot return int from void method
+]
+

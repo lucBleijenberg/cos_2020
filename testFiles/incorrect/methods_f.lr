@@ -1,0 +1,6 @@
+
+
+int a{} [
+    @ (non-void) method must have return statement
+]
+

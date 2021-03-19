@@ -1,0 +1,7 @@
+
+int a = 4
+
+void cannotAccessA{} [
+    println[a]          @ method cannot access outer variable
+]
+

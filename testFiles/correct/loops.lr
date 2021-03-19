@@ -1,0 +1,6 @@
+
+int i = 200
+
+for i = 2..8 [
+    println[i]
+]

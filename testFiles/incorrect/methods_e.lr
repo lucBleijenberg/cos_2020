@@ -1,0 +1,6 @@
+
+
+int a{} [
+    <- end     @ method must return int
+]
+

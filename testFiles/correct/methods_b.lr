@@ -1,0 +1,16 @@
+
+int a = 4
+
+void a {int a} [
+    println["a(int)"]
+]
+
+void a {float a} [
+    println["a(float)"]
+]
+
+void a {int a, int b} [
+    println["a(int, int)"]
+]
+
+a[a]    # "a(int)"

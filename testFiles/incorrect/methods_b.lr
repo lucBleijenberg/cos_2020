@@ -1,0 +1,6 @@
+
+@ cannot have arguments with same name
+void invalid{int a, int a} [
+
+]
+
